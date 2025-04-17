@@ -6,7 +6,7 @@
 
     <div>
         <h1>hal</h1>
-        <h2>hal</h2>
+        <h3>hal</h3>
     </div>
 
 </template>
