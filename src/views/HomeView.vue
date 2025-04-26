@@ -1,13 +1,258 @@
-<script setup>
-</script>
-
-<template>
-    <h2>Test Oda</h2>
-
-    <div>
-        <h1>hal hahahahaha</h1>
-        <h3>hal</h3>
-        hello
+<template class=" w-100 position-relative">
+    <header class="py-4">
+        <div class="container">
+            <div class="d-flex flex-row align-items-center justify-content-between">
+                <a href="" class="logo me-5">
+                    <img src="@/assets/img/logo.png" alt="">
+                </a>
+                <nav class="navbar ">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-list">
+                            <a href="" class="nav-link">About me</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="" class="nav-link">Education & Experience</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="" class="nav-link">Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="d-flex align-items-center">
+                    <div class="me-2">
+                        <button class="btn bg-transparent text-white">English</button>
+                        <span>/</span>
+                        <button class="btn bg-transparent text-white">ខ្មែរ</button>
+                    </div>
+                    <SwitchModeView />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="star s4">
+        <StarRotateView />
     </div>
-
+    <main class="">
+        <div class="star s1">
+            <StarRotateView />
+        </div>
+        <div class="star s2">
+            <StarRotateView />
+        </div>
+        <section class="hero-banner position-relative overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-column align-items-center">
+                            <small class="small-title text-center">WELCOME TO MY WORLD</small>
+                            <h1 class="title">Hi, I'm 
+                                <span class="title highLight position-relative">
+                                    <div class="star s3">
+                                        <StarRotateView />
+                                    </div>
+                                    Nong Oda</span>,<br>
+                                Web Developer <span class="title highLightBlue">&</span> Designer</h1>
+                            <span class="detail text-center">
+                                I specialize in frontend development with a strong focus on UX/UI, and interactive web experiences using modern tools like Vue.js and Fetch API. With a growing interest in backend development using Laravel, I enjoy bridging the gap between design and functionality 
+                            </span>
+                            <div class="social d-flex align-items-center">
+                                <span>Check out my:</span>
+                                <ul class="list-group w-auto ms-2 mt-2">
+                                    <li class="list-group-item">
+                                        <a href="">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item d-flex">
+                                        <a href="">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item d-flex">
+                                        <a href="">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item d-flex">
+                                        <a href="">
+                                            <i class="bi bi-telegram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arise-wrapper col-12 mt-5">
+                        <div class="arise position-absolute"></div>
+                    </div>
+                </div>
+                <div class="galaxy-style position-absolute">
+                    <div class="d-flex align-items-center justify-content-center w-100 h-100 position-relative">
+                        <div class="f-ouline first position-relative"></div>
+                        <div class="f-ouline second position-absolute"></div>
+                        <div class="f-ouline third position-absolute"></div>
+                    </div>
+                    <div class="card-wrapp-star position-absolute">
+                        <div style="--i:5;--j:1.6;" class="blub"></div>
+                        <div style="--i:21;--j:2.1;" class="blub"></div>
+                        <div style="--i:16;--j:1.9;" class="blub"></div>
+                        <div style="--i:12;--j:1.8;" class="blub"></div>
+                        <div style="--i:10;--j:2;" class="blub"></div>
+                        <div style="--i:16;--j:2.2;" class="blub"></div>
+                        <div style="--i:9;--j:1.5;" class="blub"></div>
+                        <div style="--i:7;--j:1.7;" class="blub"></div>
+                        <div style="--i:18;--j:2.5;" class="blub"></div>
+                        <div style="--i:20;--j:2;" class="blub"></div>
+                        <div style="--i:16;--j:1.9;" class="blub"></div>
+                        <div style="--i:21;--j:2.1;" class="blub"></div>
+                        <div style="--i:5;--j:1.6;" class="blub"></div>
+                        <div style="--i:18;--j:2.5;" class="blub"></div>
+                        <div style="--i:21;--j:2.1;" class="blub"></div>
+                        <div style="--i:7;--j:1.7;" class="blub"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutMe position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="@/assets/img/me.png" class="myImage" alt="">
+                    </div>
+                    <div class="col-8 ps-5">
+                        <div class="small-title">
+                            ABOUT ME
+                        </div>
+                        <h2 style="font-family: 'Roboto-bold'">
+                           <span class="highLightBlue" style="font-family: 'Roboto-bold'">Hi, I am Oda!</span> I’m a passionate web developer & designer who loves creating clean, thoughtful, and user-friendly websites
+                        </h2>
+                        <span class="abtBio">
+                            I enjoy the process of turning ideas into beautiful digital experiences, focusing on both how things look and how they work. Every project is a chance for me to learn something new, improve my skills, and express creativity through design and code. 
+                        </span>
+                        <br>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <ul class="list-group w-50">
+                                <span class="title-pd bold mb-2 d-block"> 
+                                    Personal Detail
+                                </span>
+                                <li class="list-group-item">
+                                    Name:<span class="myDetail">Nong Oda</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Gender:<span class="myDetail">Female</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Age:<span class="myDetail">20</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Address:<span class="myDetail">Phnom Penh, Cambodia</span>
+                                </li>
+                            </ul>
+                            <ul class="list-group w-50">
+                                <span class="title-pd bold mb-2 d-block"> 
+                                    Contact Information
+                                </span>
+                                <li class="list-group-item">
+                                    Tell:<span class="myDetail">016 360 192 / 096 338 8993</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Email:<span class="myDetail">odanongpf@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blur-style blue-style second"></div>
+        </section>
+        <section class="education mb-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="small-title text-center">
+                            EDUCATION
+                        </div>
+                        <h2 class="bold text-center mb-4">My Resume</h2>
+                    </div>
+                    <div class="col-12 ed-detail">
+                        <div class="row position-relative justify-content-center">
+                            <div class="line position-absolute"></div>
+                            <div class="col-6 d-flex flex-column align-items-end detail school left">
+                                <span class="ed-title">
+                                    Completed the Baccalaureate at <br>Beltei International School
+                                </span>
+                                <small class="s_e_year">From 2014 to 2022, Beltei International School</small>
+                                <div class="logo-wrapper d-flex flex-row align-items-center mt-2">
+                                    <img src="@/assets/img/beltie_international_school.png" alt="" class="school-logo">
+                                </div>
+                            </div>
+                            <div class="col-6 detail right">
+                                <div class="circle-line"></div>
+                                <span class="ed-year">22 Dec, 2022</span>
+                            </div>
+                            <!-- ============================================== -->
+                            <div class="col-6 detail left">
+                                <span class="ed-year">22 Dec, 2022</span>
+                            </div>
+                            <div class="col-6 d-flex flex-column align-items-end detail school right position-relative">
+                                <div class="circle-line"></div>
+                                <span class="ed-title">
+                                    Completed the ESL Diploma at <br>Beltie International School 
+                                </span>
+                                <small class="s_e_year">From 2016 to 2022, Beltie International School</small>
+                                <div class="logo-wrapper d-flex flex-row align-items-center mt-2">
+                                    <img src="@/assets/img/beltie_international_school.png" alt="" class="school-logo">
+                                </div>
+                            </div>
+                            <!-- ============================================== -->
+                            <div class="col-6 d-flex flex-column align-items-end detail school left">
+                                <span class="ed-title">
+                                    Completed a Laravel Web Development <br>Scholarship at Abstract of New Technology 
+                                </span>
+                                <small class="s_e_year">From 2024 to 2025, Abstract of New Technology</small>
+                                <div class="logo-wrapper d-flex flex-column align-items-center my-2">                                    
+                                    <div class="d-flex flex-row">
+                                        <img src="@/assets/img/dcc.png" alt="" class="school-logo">                                                                
+                                        <img src="@/assets/img/sa.png" alt="" class="school-logo" style="height: 50px;">                                                                
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <img src="@/assets/img/ANT.png" alt="" style="height: 45px!important;" class="school-logo">
+                                        <small class="ant-name">Abstract of New Technology</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 detail right">
+                                <div class="circle-line"></div>
+                                <span class="ed-year">22 Dec, 2022</span>
+                            </div>
+                            <!-- ============================================== -->
+                            <div class="col-12 position-absolute bottom-0 lastDetail">
+                                <div class="row">
+                                    <div class="col-6 detail left">
+                                        <span class="ed-year">22 Dec, 2022</span>
+                                    </div>
+                                    <div class="col-6 d-flex flex-column align-items-end detail school right position-relative pb-0">
+                                        <div class="circle-line"></div>
+                                        <span class="ed-title">
+                                            Studying Software Development at <br>Norton University
+                                        </span>
+                                        <small class="s_e_year">From 2022 to current time, Norton University</small>
+                                        <div class="logo-wrapper d-flex flex-row align-items-center mt-2">
+                                            <img src="@/assets/img/norton_university.png" alt="" class="school-logo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="blur-style blue-style first"></div>
+    
 </template>
+<script setup>
+import StarRotateView from '@/components/StarRotateView.vue';
+import SwitchModeView from '@/components/SwitchModeView.vue';
+</script>
