@@ -2,7 +2,7 @@
     <header class="py-4">
         <div class="container">
             <div class="d-flex flex-row align-items-center justify-content-between">
-                <a href="" class="logo me-5">
+                <a href="" class="logo pe-5">
                     <img src="@/assets/img/logo.png" alt="">
                 </a>
                 <nav class="navbar ">
@@ -18,14 +18,39 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="d-flex align-items-center">
+                <div class="social d-flex align-items-center">
+                                <span>Contact:</span>
+                                <ul class="list-group w-auto ms-2 mt-2">
+                                    <li class="list-group-item">
+                                        <a href="https://github.com/NongOda">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item d-flex">
+                                        <a href="https://www.facebook.com/share/1HLUtYivpH/">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item d-flex">
+                                        <a href="https://www.instagram.com/oda_nong_pf?igsh=NXkyeGx6dzcybXNh">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item d-flex">
+                                        <a href="https://t.me/odanong">
+                                            <i class="bi bi-telegram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                <!-- <div class="d-flex align-items-center">
                     <div class="me-2">
                         <button class="btn bg-transparent text-white">English</button>
                         <span>/</span>
                         <button class="btn bg-transparent text-white">ខ្មែរ</button>
                     </div>
                     <SwitchModeView />
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -55,31 +80,7 @@
                             <span class="detail text-center">
                                 I specialize in frontend development with a strong focus on UX/UI, and interactive web experiences using modern tools like Vue.js and Fetch API. With a growing interest in backend development using Laravel, I enjoy bridging the gap between design and functionality 
                             </span>
-                            <div class="social d-flex align-items-center">
-                                <span>Check out my:</span>
-                                <ul class="list-group w-auto ms-2 mt-2">
-                                    <li class="list-group-item">
-                                        <a href="">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item d-flex">
-                                        <a href="">
-                                            <i class="bi bi-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item d-flex">
-                                        <a href="">
-                                            <i class="bi bi-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item d-flex">
-                                        <a href="">
-                                            <i class="bi bi-telegram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="arise-wrapper col-12 mt-5">

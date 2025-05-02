@@ -67,6 +67,11 @@ header .logo img{
 header .navbar ul li a{
   padding-inline: 15px;
 }
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 5000000;
+}
 /* ==================blur-bg================ */
 .blur-style{
   height: 500px;
@@ -88,6 +93,13 @@ header .navbar ul li a{
   left: -180px;
 }
 /* =========================Body================= */
+main .hero-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 150px; */
+  height: 100vh!important;
+}
 main .container .small-title{
   font-family: "Roboto-light";
 }
@@ -120,12 +132,12 @@ main .hero-banner .detail{
   background-color: transparent;
 } 
 .social .list-group .list-group-item a i{
-  font-size: 24px;
+  font-size: 20px;
   padding-inline: 8px;
 } 
-section{
+/* section{
   margin-top: 100px;
-}
+} */
 .hero-banner .galaxy-style{
   top: 110px;
   left: 80px;
@@ -283,7 +295,7 @@ section{
 /* =======================Arise============== */
 .hero-banner .arise-wrapper{
   width: 624px;
-  height: 250px;
+  height: 100px;
   margin: auto;
   overflow: hidden;
 
