@@ -120,9 +120,9 @@
                         <img src="@/assets/img/me.png" class="myImage" alt="">
                     </div>
                     <div class="col-8 ps-5">
-                        <div class="small-title">
+                        <small class="small-title">
                             ABOUT ME
-                        </div>
+                        </small>
                         <h2 style="font-family: 'Roboto-bold'">
                            <span class="highLightBlue" style="font-family: 'Roboto-bold'">Hi, I am Oda!</span> I’m a passionate web developer & designer who loves creating clean, thoughtful, and user-friendly websites
                         </h2>
@@ -169,9 +169,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <div class="small-title text-center">
+                        <small class="small-title text-center d-block">
                             EDUCATION
-                        </div>
+                        </small>
                         <h2 class="bold text-center mb-4">My Resume</h2>
                     </div>
                     <div class="col-12 ed-detail">
@@ -248,11 +248,119 @@
                 </div>
             </div>
         </section>
+        <section class="mySkill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <small class="small-title text-center d-block">
+                            SPECIALITY
+                        </small>
+                        <h2 class="bold text-center mb-4">My Skills</h2>
+                    </div>
+                    <div class="col-12">
+                        <div class="row position-relative g-2 align-items-center justify-content-center">
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-figma"></i>
+                                    <span class="skillName">Figma</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <span class="skillName">HTML</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span class="skillName">CSS3</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <span class="skillName">BootStrap</span>
+                                </div>
+                            </div>
+                            <div class="col-2" style="--cskill: #d0aa13b3">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-js"></i>
+                                    <span class="skillName">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-php"></i>
+                                    <span class="skillName">PHP</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-light fa-database"></i>
+                                    <span class="skillName">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-vuejs"></i>
+                                    <span class="skillName">VueJS</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-laravel"></i>
+                                    <span class="skillName">Laravel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
     </main>
+    <footer>
+        <div class="d-flex justify-content-between">
+            <div class="row">
+                <div class="col">
+                    <span>Copy</span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <div class="blur-style blue-style first"></div>
     
 </template>
 <script setup>
-import StarRotateView from '@/components/StarRotateView.vue';
-import SwitchModeView from '@/components/SwitchModeView.vue';
+    import StarRotateView from '@/components/StarRotateView.vue';
+    import SwitchModeView from '@/components/SwitchModeView.vue';
+    import { onMounted } from 'vue';
+//     onMounted(() => {
+//     const cards = document.querySelectorAll('.skill-wrapper');
+//     cards.forEach(card => {
+//         card.onmousemove = function(e) {
+//             let x = e.pageX - card.offsetLeft;
+//             let y = e.pageY - card.offsetTop;
+
+//             card.style.setProperty('--x', x + 'px');
+//             card.style.setProperty('--y', y + 'px');
+//         }
+//     });
+// });
+    onMounted(() => {
+        const cards = document.querySelectorAll('.skill-wrapper');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', function(e) {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left; // clientX relative to card
+                const y = e.clientY - rect.top;  // clientY relative to card
+
+                card.style.setProperty('--x', x + 'px');
+                card.style.setProperty('--y', y + 'px');
+            });
+        });
+    });
+
 </script>

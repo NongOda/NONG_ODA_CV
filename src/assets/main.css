@@ -11,6 +11,9 @@
     max-width: 1350px;
   }
 }
+.container{
+  position: relative!important;
+}
 body{
   background-color: #07070A!important;
 }
@@ -402,7 +405,7 @@ body .list-group .list-group-item{
   display: flex;
   justify-content: center;
 }
- .education .detail.right .circle-line{
+.education .detail.right .circle-line{
   position: absolute;
   width: 20px!important;
   height: 20px!important;
@@ -410,7 +413,49 @@ body .list-group .list-group-item{
   border-radius: 50%;
   left: -10px;
   top: 10px;
- }
- .education .ant-name{
+}
+.education .ant-name{
   font-size: 12px;
- }
+}
+/* =================My Skill===================== */
+.mySkill{
+  /* margin-top: 200px!important; */
+  margin-block: 250px!important;
+}
+.mySkill .skill-wrapper{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* padding-block: 100px; */
+  padding-block: 60px;
+  border-radius: 15px;
+  position: relative!important;
+  overflow: hidden!important;
+}
+.mySkill .skill-wrapper::before{
+  content: '';
+  position: absolute;
+  /* rgba(80, 15, 145, 0.737) */
+  background: radial-gradient(circle at center, rgba(80, 15, 145, 0.737), transparent, transparent);
+  /* background: radial-gradient(circle at center, #d0aa13b3, transparent, transparent); */
+  /* background: radial-gradient(circle at center,var(--cskill), transparent, transparent); */
+  width:  400px;
+  height: 400px;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  transition: 0.5s, top 0s, left 0;
+  opacity: 0;
+  z-index: -5;
+  /* right: 0; */
+}
+.mySkill .skill-wrapper:hover::before{
+  opacity: 1;
+}
+
+.mySkill .skill-wrapper i{
+  font-size: 50px;
+  margin-bottom: 15px;
+}
