@@ -1,5 +1,5 @@
 <template class=" w-100 position-relative">
-    <header class="py-4">
+    <header class="py-3">
         <div class="container">
             <div class="d-flex flex-row align-items-center justify-content-between">
                 <a href="" class="logo pe-5">
@@ -8,41 +8,43 @@
                 <nav class="navbar ">
                     <ul class="navbar-nav flex-row">
                         <li class="nav-list">
-                            <a href="" class="nav-link">About me</a>
+                            <a href="#about" class="nav-link">About me</a>
                         </li>
                         <li class="nav-list">
-                            <a href="" class="nav-link">Education & Experience</a>
+                            <a href="#education" class="nav-link">Education & Experience</a>
                         </li>
                         <li class="nav-list">
-                            <a href="" class="nav-link">Projects</a>
+                            <a href="#skill" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#project" class="nav-link">Projects</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="social d-flex align-items-center">
-                                <span>Contact:</span>
-                                <ul class="list-group w-auto ms-2 mt-2">
-                                    <li class="list-group-item">
-                                        <a href="https://github.com/NongOda">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item d-flex">
-                                        <a href="https://www.facebook.com/share/1HLUtYivpH/">
-                                            <i class="bi bi-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item d-flex">
-                                        <a href="https://www.instagram.com/oda_nong_pf?igsh=NXkyeGx6dzcybXNh">
-                                            <i class="bi bi-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item d-flex">
-                                        <a href="https://t.me/odanong">
-                                            <i class="bi bi-telegram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <ul class="list-group w-auto">
+                        <li class="list-group-item">
+                            <a href="https://github.com/NongOda">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <a href="https://www.facebook.com/share/1HLUtYivpH/">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <a href="https://www.instagram.com/oda_nong_pf?igsh=NXkyeGx6dzcybXNh">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <a href="https://t.me/odanong">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <!-- <div class="d-flex align-items-center">
                     <div class="me-2">
                         <button class="btn bg-transparent text-white">English</button>
@@ -65,9 +67,10 @@
             <StarRotateView />
         </div>
         <section class="hero-banner position-relative overflow-hidden">
-            <div class="container">
+            <div class="blur-style blue-style first"></div>
+            <div class="container ">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mt-3">
                         <div class="d-flex flex-column align-items-center">
                             <small class="small-title text-center">WELCOME TO MY WORLD</small>
                             <h1 class="title">Hi, I'm 
@@ -83,7 +86,7 @@
                             
                         </div>
                     </div>
-                    <div class="arise-wrapper col-12 mt-5">
+                    <div class="f col-12 arise-wrapper mt-5 pt-4">
                         <div class="arise position-absolute"></div>
                     </div>
                 </div>
@@ -114,9 +117,10 @@
                 </div>
             </div>
         </section>
-        <section class="aboutMe position-relative">
+        <section class="aboutMe position-relative" id="about">
             <div class="container">
                 <div class="row">
+                    <div class="blur-style blue-style second"></div>
                     <div class="col-4">
                         <img src="@/assets/img/me.png" class="myImage" alt="">
                     </div>
@@ -164,9 +168,8 @@
                     </div>
                 </div>
             </div>
-            <div class="blur-style blue-style second"></div>
         </section>
-        <section class="education mb-5">
+        <section class="education mb-5" id="education">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12">
@@ -249,7 +252,7 @@
                 </div>
             </div>
         </section>
-        <section class="mySkill">
+        <section class="mySkill" id="skill">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -321,6 +324,48 @@
             </div>
 
         </section>
+        <section class="myProject" id="project">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <small class="small-title text-center d-block">
+                            SPECIALITY
+                        </small>
+                        <h2 class="bold text-center mb-4">Project Overview</h2>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://unique-frangipane-2d03a1.netlify.app/" class="project-wrapper">
+                            <div class="thumbnail">
+                                <img src="@/assets/img/angkortrek(2).png" alt="">
+                            </div>
+                            <div class="detail-wrapper">
+                                <small class="date">16 Oct 2024</small>
+                                <span class="title">Khmer Angkor Trek</span>
+                                <p class="subtitle">
+                                    This website is developed to promote and explore the cultural heritage and tourist destinations of Cambodia
+                                </p>
+                                <span class="lang"><i class="fa-light fa-code"></i> <span class="meduim">Built with: HTML, CSS and Bootstrap</span> </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://illustrious-horse-98dd8c.netlify.app/" class="project-wrapper">
+                            <div class="thumbnail">
+                                <img src="@/assets/img/green_folio.png" alt="">
+                            </div>
+                            <div class="detail-wrapper">
+                                <small class="date">16 Oct 2024</small>
+                                <span class="title">Green Folio</span>
+                                <p class="subtitle">
+                                    This website is developed to promote and explore the cultural heritage and tourist destinations of Cambodia
+                                </p>
+                                <span class="lang"><i class="fa-light fa-code"></i> <span class="meduim">Built with: HTML, CSS Bootstrap and JavaScript</span> </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="d-flex justify-content-between">
@@ -331,25 +376,13 @@
             </div>
         </div>
     </footer>
-    <div class="blur-style blue-style first"></div>
     
 </template>
 <script setup>
     import StarRotateView from '@/components/StarRotateView.vue';
     import SwitchModeView from '@/components/SwitchModeView.vue';
     import { onMounted } from 'vue';
-//     onMounted(() => {
-//     const cards = document.querySelectorAll('.skill-wrapper');
-//     cards.forEach(card => {
-//         card.onmousemove = function(e) {
-//             let x = e.pageX - card.offsetLeft;
-//             let y = e.pageY - card.offsetTop;
-
-//             card.style.setProperty('--x', x + 'px');
-//             card.style.setProperty('--y', y + 'px');
-//         }
-//     });
-// });
+    import { onBeforeUnmount } from 'vue';
     onMounted(() => {
         const cards = document.querySelectorAll('.skill-wrapper');
         cards.forEach(card => {
@@ -363,5 +396,33 @@
             });
         });
     });
+    onMounted(() => {
+        const cards = document.querySelectorAll('.thumbnail');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', function(e) {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left; // clientX relative to card
+                const y = e.clientY - rect.top;  // clientY relative to card
 
+                card.style.setProperty('--px', x + 'px');
+                card.style.setProperty('--py', y + 'px');
+            });
+        });
+    });
+    const handleScrolled = () => {
+        const header = document.querySelector('header');
+        if(window.scrollY > 50){
+            header.classList.add('scroll');
+        }else{
+            header.classList.remove('scroll');
+        }
+    }
+    
+    onMounted(() => {
+        window.addEventListener('scroll', handleScrolled);
+    });
+
+    onBeforeUnmount(() => {
+        window.removeEventListener('scroll', handleScrolled);
+    });
 </script>

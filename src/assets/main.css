@@ -63,14 +63,40 @@ body{
 header .logo img{
   width: 45px;
   height: 45px;
+  border-bottom: none;
 }
 header .navbar ul li a{
-  padding-inline: 15px;
+  padding-inline: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .navbar ul li a::after{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 3px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  transition: 0.25s;
+}
+header .navbar ul li a:hover::after{
+  opacity: 1;
 }
 header{
   position: fixed;
   width: 100%;
+  margin-bottom: 50px;
   z-index: 5000000;
+}
+header.scroll {
+  backdrop-filter: blur(10px);
+  background-color: #07070a99;
+  border-bottom: 2px solid #1d1d3ac2;
+  transition: all 0.3s;
 }
 /* ==================blur-bg================ */
 .blur-style{
@@ -89,7 +115,7 @@ header{
   right: -180px;
 }
 .blur-style.second{
-  top: -300px;
+  /* top: -300px; */
   left: -180px;
 }
 /* =========================Body================= */
@@ -334,7 +360,7 @@ main .hero-banner .detail{
 }
 /* =======================About Me========================= */
 .aboutMe{
-  margin-top: 50px;
+  padding-top: 100px;
 }
 
 .aboutMe .myImage{
@@ -366,6 +392,9 @@ body .list-group .list-group-item{
 
 }
 /* =====================Education============== */
+.education{
+  padding-top: 120px;
+}
 .education .ed-title{
   font-size: 22px!important;
   font-family: "Roboto-bold"!important;
@@ -431,16 +460,15 @@ body .list-group .list-group-item{
 }
 /* =================My Skill===================== */
 .mySkill{
-  /* margin-top: 200px!important; */
-  margin-block: 250px!important;
+  display: block;
+  margin-top: 90px;
+  padding-top: 160px!important;
 }
 .mySkill .skill-wrapper{
-  
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* padding-block: 100px; */
   padding-block: 60px;
   border-radius: 15px;
   position: relative!important;
@@ -449,10 +477,7 @@ body .list-group .list-group-item{
 .mySkill .skill-wrapper::before{
   content: '';
   position: absolute;
-  /* rgba(80, 15, 145, 0.737) */
   background: radial-gradient(circle at center, rgba(80, 15, 145, 0.737), transparent, transparent);
-  /* background: radial-gradient(circle at center, #d0aa13b3, transparent, transparent); */
-  /* background: radial-gradient(circle at center,var(--cskill), transparent, transparent); */
   width:  400px;
   height: 400px;
   top: var(--y);
@@ -461,7 +486,6 @@ body .list-group .list-group-item{
   transition: 0.5s, top 0s, left 0;
   opacity: 0;
   z-index: -5;
-  /* right: 0; */
 }
 .mySkill .skill-wrapper:hover::before{
   opacity: 1;
@@ -470,4 +494,76 @@ body .list-group .list-group-item{
 .mySkill .skill-wrapper i{
   font-size: 50px;
   margin-bottom: 15px;
+}
+/* ====================== */
+.myProject{
+  padding-block: 120px;
+}
+.myProject .project-wrapper{
+  width: 100%;
+  text-decoration: none;
+}
+.myProject .project-wrapper .thumbnail{
+  height: 250px!important;
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.myProject .project-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: 5s;
+  z-index: 2;
+}
+.myProject .project-wrapper:hover img{
+  object-position: bottom;
+}
+.myProject .project-wrapper:hover .thumbnail::after{
+  background-color: #07070a14;
+}
+.myProject .project-wrapper .thumbnail::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: 0.25s;
+}
+.myProject .project-wrapper .thumbnail::before{
+  content: '';
+  position: absolute;
+  background: radial-gradient(circle at center, #ffffff94, #ffffff3c,  transparent, transparent);
+  width:  500px;
+  height:  500px;
+  top: var(--py);
+  left: var(--px);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 5;
+  transition: 0.8s, top 0s, left 0;
+}
+.myProject .project-wrapper .thumbnail:hover::before{
+  opacity: 1;
+}
+
+.myProject .project-wrapper .date{
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.716)!important;
+}
+.myProject .project-wrapper .title{
+  font-size: 19px;
+  font-family: "Roboto-bold"!important;
+}
+.myProject .project-wrapper .subtitle{
+  margin-bottom: 5px!important;
+  font-size: 16px!important;
+}
+.myProject .project-wrapper .lang{
+  font-size: 15px!important;
 }
