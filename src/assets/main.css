@@ -567,3 +567,10 @@ body .list-group .list-group-item{
 .myProject .project-wrapper .lang{
   font-size: 15px!important;
 }
+footer{
+  border-top: 1px solid #ffffff1a;
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

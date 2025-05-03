@@ -371,7 +371,7 @@
         <div class="d-flex justify-content-between">
             <div class="row">
                 <div class="col">
-                    <span>Copy</span>
+                    <small>© 2025 Nong Oda. All rights reserved.</small>
                 </div>
             </div>
         </div>
