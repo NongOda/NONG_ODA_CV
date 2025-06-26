@@ -317,12 +317,60 @@
                                     <span class="skillName">Laravel</span>
                                 </div>
                             </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <img src="@/assets/img/c-plus-plus-logo.png" height="55" width="55" class="img-contain" alt="">
+                                    <span class="skillName">C++</span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <i class="fa-brands fa-flutter"></i>
+                                    <span class="skillName">Flutter <i class="notice">(Basic + Fetch API)</i></span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="skill-wrapper">
+                                    <img src="@/assets/img/blender-3d.png" height="55" width="55" class="img-contain" alt="">
+                                    <span class="skillName">Blender <i class="notice">(Learning)</i></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                
             </div>
-
+            
+        </section>
+        <section class="myFuturePlan mySkill my-0" style="padding-top: 50px!important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <small class="small-title text-center d-block">
+                            FUTURE PLAN
+                        </small>
+                        <h2 class="bold text-center mb-4">My Future Plans</h2>
+                    </div>
+                    <div class="col-2">
+                        <div class="skill-wrapper">
+                            <img src="@/assets/img/spring-boot.png" height="55" width="55" class="img-contain" alt="">
+                            <span class="skillName">Spring Boot</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="skill-wrapper">
+                            <i class="fa-brands fa-linux"></i>
+                            <span class="skillName">Linux</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="skill-wrapper">
+                            <i class="fa-light fa-shield-check"></i>
+                            <span class="skillName">Cyber Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="myProject" id="project">
             <div class="container">
@@ -401,8 +449,8 @@
         cards.forEach(card => {
             card.addEventListener('mousemove', function(e) {
                 const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left; // clientX relative to card
-                const y = e.clientY - rect.top;  // clientY relative to card
+                const x = e.clientX - rect.left; 
+                const y = e.clientY - rect.top;
 
                 card.style.setProperty('--px', x + 'px');
                 card.style.setProperty('--py', y + 'px');

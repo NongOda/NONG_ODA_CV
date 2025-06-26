@@ -492,7 +492,7 @@ body .list-group .list-group-item{
 }
 
 .mySkill .skill-wrapper i{
-  font-size: 50px;
+  font-size: 50px!important;
   margin-bottom: 15px;
 }
 /* ====================== */
@@ -573,4 +573,11 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.mySkill .img-contain{
+  object-fit: contain;
+  margin-bottom: 13px;
+}
+.mySkill .skill-wrapper span i.notice{
+  font-size: 13px!important;
 }
