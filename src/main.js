@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '@/assets/main.css'
 
+import '@fortawesome/fontawesome-free/css/all.css'
 import '@/assets/library/font awesome/css/all.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
