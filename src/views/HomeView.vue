@@ -196,7 +196,7 @@
                             </div>
                             <!-- ============================================== -->
                             <div class="col-6 detail left">
-                                <span class="ed-year">22 Dec, 2022</span>
+                                <span class="ed-year">15 Mar, 2022</span>
                             </div>
                             <div class="col-6 d-flex flex-column align-items-end detail school right position-relative">
                                 <div class="circle-line"></div>
@@ -227,13 +227,13 @@
                             </div>
                             <div class="col-6 detail right">
                                 <div class="circle-line"></div>
-                                <span class="ed-year">22 Dec, 2022</span>
+                                <span class="ed-year">7 Apr, 2025</span>
                             </div>
                             <!-- ============================================== -->
                             <div class="col-12 position-absolute bottom-0 lastDetail">
                                 <div class="row">
                                     <div class="col-6 detail left">
-                                        <span class="ed-year">22 Dec, 2022</span>
+                                        <span class="ed-year">Currently</span>
                                     </div>
                                     <div class="col-6 d-flex flex-column align-items-end detail school right position-relative pb-0">
                                         <div class="circle-line"></div>
