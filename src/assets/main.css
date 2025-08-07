@@ -65,14 +65,14 @@ header .logo img{
   height: 45px;
   border-bottom: none;
 }
-header .navbar ul li a{
+header .navbar ul li a, .offcanvas header .navbar ul li a{
   padding-inline: 20px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: start;
 }
-header .navbar ul li a::after{
+header .navbar ul li a::after, .offcanvas header .navbar ul li a::after{
   content: '';
   position: absolute;
   width: 5px;
@@ -83,13 +83,17 @@ header .navbar ul li a::after{
   opacity: 0;
   transition: 0.25s;
 }
-header .navbar ul li a:hover::after{
+header .navbar ul li a:hover::after, .offcanvas header .navbar ul li a:hover{
   opacity: 1;
 }
 header{
+  top: 0;
   position: fixed;
+  /* position: sticky; */
   width: 100%;
-  margin-bottom: 50px;
+  height: auto;
+  /* background-color: transparent!important; */
+  /* padding-bottom: 50px; */
   z-index: 5000000;
 }
 header.scroll {
@@ -121,13 +125,16 @@ header.scroll {
 /* =========================Body================= */
 main .hero-banner{
   display: flex;
+  margin-bottom: 60px;
   align-items: center;
   justify-content: center;
   /* margin-top: 150px; */
   height: 100vh!important;
 }
 main .container .small-title{
-  font-family: "Roboto-light";
+  font-family: "Roboto-meduim";
+  font-size: 13px!important;
+  color: rgba(255, 255, 255, 0.885)!important;
 }
 main .hero-banner .title{
   font-family: "Roboto-Bold";
@@ -141,12 +148,13 @@ main .hero-banner .title{
 }
 main .hero-banner h1.title{
   font-size: 45px;
-  margin-block: 10px;
+  margin-block: 8px;
 }
 main .hero-banner .detail{
-  width: 58%;
+  /* width: 58%; */
   font-family: "Roboto-light";
-  line-height: 25px;
+  line-height: 22px;
+  font-size: 15px!important;
 }
 .social .list-group{
   padding: 0!important;
@@ -165,11 +173,13 @@ main .hero-banner .detail{
   margin-top: 100px;
 } */
 .hero-banner .galaxy-style{
-  top: 110px;
-  left: 80px;
+  top: 10%;
+  left: -5%;
   transform: rotate(20deg);
-  width: 350px;
-  height: 130px;
+  /* width: 350px;
+  height: 130px; */
+  width: 300px;
+  height: 100px;
   overflow: visible;
   border-radius: 100%;
   background: radial-gradient(ellipse at center,rgba(80, 15, 145, 0.737) 5%, rgba(7, 7, 10, 0) 60%);
@@ -289,13 +299,13 @@ main .hero-banner .detail{
 }
 @keyframes ariseShadow {
   0% {
-    box-shadow: 0 -28px 50px 10px #29337fcd;
+    box-shadow: 0 -28px 50px 10px #19215fcd;
   }
   50%{    
-    box-shadow: 0 -28px 50px 10px #2f3ca1d2;
+    box-shadow: 0 -28px 50px 10px #2d3a9fd2;
   }
   100% {
-    box-shadow: 0 -28px 50px 10px #29337fcd;
+    box-shadow: 0 -28px 50px 10px #19215fcd;
   }
 }
 .star{
@@ -319,30 +329,40 @@ main .hero-banner .detail{
   /* right: -10px; */
 }
 /* =======================Arise============== */
-.hero-banner .arise-wrapper{
-  width: 624px;
-  height: 100px;
+.hero-banner .arise-wrapper, .hero-banner .arise-wrapper.second{
+  /* width: 70%; f*/
+  width: 80%!important;
+  height: auto;
   margin: auto;
   overflow: hidden;
-
+  /* padding-bottom: 15px!important; */
+}
+.hero-banner .arise-wrapper.second .arise{
+  width: 90%!important;
+  height: 95%!important;
+}
+.hero-banner .arise-wrapper.third .arise{
+  width: 60%!important;
+  height: 120%!important;
 }
 .hero-banner .arise{
-  width: 680px;
-  height: 600px;
+  width: 55%;
+  height: 180%!important;
+  /* height: 600px; */
   border-radius: 50%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #33338f 0%, #07070A 17%);
+  background: linear-gradient(to bottom, #37379c 0%, #1c1c6f 10%, #11111d 17%);
 }
 .hero-banner .arise::before{
   content: '';
   top: 19px;
   position: absolute;
-  width: 70%;
-  height: 100%;  
-  animation: ariseShadow 2s linear infinite;
+  width: 72%;
+  height: 70%!important;  
+  animation: ariseShadow 3s linear infinite;
   border-radius: 50%;
   background-color: transparent;
   z-index: -500;
@@ -360,19 +380,20 @@ main .hero-banner .detail{
 }
 /* =======================About Me========================= */
 .aboutMe{
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .aboutMe .myImage{
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
   object-position: top;
   border-radius: 15px;
 }
 .aboutMe .abtBio{
-  font-size: 17px;
   font-family: "Roboto-light";
+  line-height: 22px;
+  font-size: 15px!important;
 }
 .aboutMe .title-pd{
   font-size: 17px;
@@ -380,38 +401,41 @@ main .hero-banner .detail{
 body .list-group .list-group-item{
   display: flex;
   background-color: transparent;
+  font-size: 15px!important;
 }
 .aboutMe .list-group-item{
   border: 0!important;
-  padding: 15px 0!important;
+  padding: 10px 0!important;
   color: rgba(255, 255, 255, 0.832)!important;
 }
 .aboutMe .list-group-item .myDetail{
   width: 75%;
   margin-left: auto;
-
 }
 /* =====================Education============== */
 .education{
   padding-top: 120px;
 }
 .education .ed-title{
-  font-size: 22px!important;
-  font-family: "Roboto-bold"!important;
+  font-size: 19px!important;
+  font-family: "Roboto-meduim"!important;
   /* display: block; */
   display: flex;
 }
-.education .detail.school{
-  padding-bottom: 150px;
+.education .detail.school, .bottom-90{
+  padding-bottom: 90px;
+}
+.top-90{
+  padding-top: 90px;
 }
 .education .detail.left{
-  padding-right: 100px!important;
+  padding-right: 90px!important;
   align-items: end!important;
   text-align: end;
 }
 .education .detail.right{
   position: relative;
-  padding-left: 100px!important;
+  padding-left: 80px!important;
   align-items: start!important;
 }
 .education .detail.left{
@@ -421,7 +445,7 @@ body .list-group .list-group-item{
   text-align: end;
 }
 .education .ed-year{
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Roboto-bold"!important;
 }
 .education .ed-detail .s_e_year{
@@ -580,4 +604,65 @@ footer{
 }
 .mySkill .skill-wrapper span i.notice{
   font-size: 13px!important;
+}
+/* From Uiverse.io by ArturCodeCraft */ 
+/* <reset-style> ============================ */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+/* ============================ */
+/* <style for bg> ======== */
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <style for menu__icon> ======== */
+.menu__icon {
+  width: 28px;
+  height: 24px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__icon span {
+  width: 100%;
+  height: 0.125rem;
+  border-radius: 0.125rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 .5px 2px 0 hsla(0, 0%, 0%, .2);
+  transition: transform .4s, background-color .4s, opacity .4s;
+}
+.offcanvas{
+  backdrop-filter: blur(10px);
+  background-color: #07070a99;
+  z-index: 50000005;
+}
+.offcanvas .offcanvas-header .name{
+  font-weight: 600!important;
+  padding-left: 10px;
+}
+.offcanvas .offcanvas-body .menu,
+.offcanvas-footer small{
+  font-size: 11px!important;
+  font-weight: 500!important;
+  color: rgba(255, 255, 255, 0.736)!important;
+}
+.offcanvas .offcanvas-body .menu__icon{
+  width: 24px;
+  height: 21px;
+  margin-right: 5px;
+}
+.offcanvas .offcanvas-body .menu__icon span{
+    height: 2px!important;
+  background-color:rgba(255, 255, 255, 0.608)!important;
 }

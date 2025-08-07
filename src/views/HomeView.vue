@@ -5,7 +5,7 @@
                 <a href="" class="logo pe-5">
                     <img src="@/assets/img/logo.png" alt="">
                 </a>
-                <nav class="navbar ">
+                <nav class="navbar d-lg-flex d-none">
                     <ul class="navbar-nav flex-row">
                         <li class="nav-list">
                             <a href="#about" class="nav-link">About me</a>
@@ -21,30 +21,40 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="social d-flex align-items-center">
-                    <ul class="list-group w-auto">
-                        <li class="list-group-item">
-                            <a href="https://github.com/NongOda">
-                                <i class="bi bi-github"></i>
-                            </a>
-                        </li>
-                        <li class="list-group-item d-flex">
-                            <a href="https://www.facebook.com/share/1HLUtYivpH/">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-group-item d-flex">
-                            <a href="https://www.instagram.com/oda_nong_pf?igsh=NXkyeGx6dzcybXNh">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="list-group-item d-flex">
-                            <a href="https://t.me/odanong">
-                                <i class="bi bi-telegram"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="d-flex flex-row">
+                    <div class="social align-items-center me-lg-0 me-3 d-md-flex d-none">
+                        <ul class="list-group w-auto">
+                            <li class="list-group-item">
+                                <a href="https://github.com/NongOda">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <a href="https://www.facebook.com/share/1HLUtYivpH/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <a href="https://www.instagram.com/oda_nong_pf?igsh=NXkyeGx6dzcybXNh">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <a href="https://t.me/odanong">
+                                    <i class="bi bi-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="background d-lg-none d-block">
+                        <button class="menu__icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasWithBothOptions">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
+
                 <!-- <div class="d-flex align-items-center">
                     <div class="me-2">
                         <button class="btn bg-transparent text-white">English</button>
@@ -59,6 +69,41 @@
     <div class="star s4">
         <StarRotateView />
     </div>
+    <div class="offcanvas offcanvas-start p-3" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <img src="../assets/img/logo.png" style="height: 35px;" alt="">
+            <span class="name">NONG ODA</span>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i class="fa-regular fa-xmark" style="font-size: 20px;"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex flex-row align-items-center mb-2"> 
+                <div class="menu__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="menu">MENU</span>
+            </div>
+             <ul class="navbar-nav flex-column">
+                <li class="nav-list">
+                    <a href="#about" class="nav-link">About me</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#education" class="nav-link">Education & Experience</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#skill" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#project" class="nav-link">Projects</a>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer d-flex align-items-center justify-content-center">
+            <small class="text-center">© 2025 Nong Oda. All rights reserved.</small>
+        </div>
+    </div>
+
     <main class="">
         <div class="star s1">
             <StarRotateView />
@@ -66,13 +111,13 @@
         <div class="star s2">
             <StarRotateView />
         </div>
-        <section class="hero-banner position-relative overflow-hidden">
+        <section class="hero-banner position-relative overflow-hidden" style="padding-top:30px;">
             <div class="blur-style blue-style first"></div>
             <div class="container ">
                 <div class="row">
                     <div class="col-12 mt-3">
                         <div class="d-flex flex-column align-items-center">
-                            <small class="small-title text-center">WELCOME TO MY WORLD</small>
+                            <small class="small-title text-center">WELCOME TO MY PORTFOLIO</small>
                             <h1 class="title">Hi, I'm 
                                 <span class="title highLight position-relative">
                                     <div class="star s3">
@@ -80,13 +125,19 @@
                                     </div>
                                     Nong Oda</span>,<br>
                                 Web Developer <span class="title highLightBlue">&</span> Designer</h1>
-                            <span class="detail text-center">
+                            <span class="detail text-center px-lg-5 px-0">
                                 I specialize in frontend development with a strong focus on UX/UI, and interactive web experiences using modern tools like Vue.js and Fetch API. With a growing interest in backend development using Laravel, I enjoy bridging the gap between design and functionality 
                             </span>
                             
                         </div>
                     </div>
-                    <div class="f col-12 arise-wrapper mt-5 pt-4">
+                    <div class="col-12 arise-wrapper mt-5 pt-4 d-flex justify-content-center d-xl-flex d-none ">
+                        <div class="arise position-absolute"></div>
+                    </div>
+                    <div class="col-12 arise-wrapper third mt-5 pt-4 d-flex justify-content-center d-xl-none d-md-flex d-none ">
+                        <div class="arise position-absolute"></div>
+                    </div>
+                    <div class="col-12 arise-wrapper second mt-5 pt-4 w-100 justify-content-center d-md-none d-flex">
                         <div class="arise position-absolute"></div>
                     </div>
                 </div>
@@ -119,12 +170,10 @@
         </section>
         <section class="aboutMe position-relative" id="about">
             <div class="container">
-                <div class="row">
+                <div class=" flex-lg-row-reverse row">
                     <div class="blur-style blue-style second"></div>
-                    <div class="col-4">
-                        <img src="@/assets/img/me.png" class="myImage" alt="">
-                    </div>
-                    <div class="col-8 ps-5">
+
+                    <div class="col-xl-8 col-lg-6 col-12 ps-xl-5">
                         <small class="small-title">
                             ABOUT ME
                         </small>
@@ -135,8 +184,8 @@
                             I enjoy the process of turning ideas into beautiful digital experiences, focusing on both how things look and how they work. Every project is a chance for me to learn something new, improve my skills, and express creativity through design and code. 
                         </span>
                         <br>
-                        <div class="d-flex flex-row justify-content-between mt-3">
-                            <ul class="list-group w-50">
+                        <div class="d-flex flex-lg-row flex-column justify-content-between mt-3">
+                            <ul class="list-group w-lg-50 w-100">
                                 <span class="title-pd bold mb-2 d-block"> 
                                     Personal Detail
                                 </span>
@@ -153,8 +202,8 @@
                                     Address:<span class="myDetail">Phnom Penh, Cambodia</span>
                                 </li>
                             </ul>
-                            <ul class="list-group w-50">
-                                <span class="title-pd bold mb-2 d-block"> 
+                            <ul class="list-group w-lg-50 w-100">
+                                <span class="title-pd bold mb-2 d-block mt-lg-0 mt-3"> 
                                     Contact Information
                                 </span>
                                 <li class="list-group-item">
@@ -165,6 +214,9 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 d-lg-flex d-none">
+                        <img src="@/assets/img/me.png" class="myImage" alt="">
                     </div>
                 </div>
             </div>
@@ -180,8 +232,9 @@
                     </div>
                     <div class="col-12 ed-detail">
                         <div class="row position-relative justify-content-center">
-                            <div class="line position-absolute"></div>
-                            <div class="col-6 d-flex flex-column align-items-end detail school left">
+                            <div class="line position-absolute d-lg-none d-flex start-0 ms-3"></div>
+                            <div class="line position-absolute d-lg-flex d-none"></div>
+                            <div class="col-lg-6 d-lg-flex d-none flex-column align-items-end detail school left">
                                 <span class="ed-title">
                                     Completed the Baccalaureate at <br>Beltei International School
                                 </span>
@@ -190,16 +243,32 @@
                                     <img src="@/assets/img/beltie_international_school.png" alt="" class="school-logo">
                                 </div>
                             </div>
-                            <div class="col-6 detail right">
-                                <div class="circle-line"></div>
+                            <div class="col-lg-6 col-12 detail right">
+                                <div class="circle-line d-lg-none d-block ms-3"></div>
+                                <div class="circle-line d-lg-flex d-none"></div>
                                 <span class="ed-year">22 Dec, 2022</span>
+                                
+                                <!-- ============================================== -->
+                                <div class="d-lg-none d-flex flex-column align-items-start bottom-90">
+                                    <span class="ed-title">
+                                        Completed the Baccalaureate at <br>Beltei International School
+                                    </span>
+                                    <small class="s_e_year">From 2014 to 2022, Beltei International School</small>
+                                    <div class="logo-wrapper d-flex flex-row align-items-center mt-2">
+                                        <img src="@/assets/img/beltie_international_school.png" alt="" class="school-logo">
+                                    </div>
+                                </div>
+                                <!-- ============================================== -->
+
                             </div>
                             <!-- ============================================== -->
-                            <div class="col-6 detail left">
-                                <span class="ed-year">15 Mar, 2022</span>
+                            <div class="col-lg-6 d-lg-block d-none justify-content-center detail left">
+                                <span class="ed-year ">15 Mar, 2022</span>
                             </div>
-                            <div class="col-6 d-flex flex-column align-items-end detail school right position-relative">
-                                <div class="circle-line"></div>
+                            <div class="col-lg-6 col-12 d-flex flex-column detail school right position-relative ">
+                                <div class="circle-line d-lg-none d-block ms-3"></div>
+                                <div class="circle-line d-lg-flex d-none"></div>
+                                <span class="ed-year d-lg-none d-block">15 Mar, 2022</span>
                                 <span class="ed-title">
                                     Completed the ESL Diploma at <br>Beltie International School 
                                 </span>
@@ -209,7 +278,7 @@
                                 </div>
                             </div>
                             <!-- ============================================== -->
-                            <div class="col-6 d-flex flex-column align-items-end detail school left">
+                            <div class="col-lg-6 d-lg-flex d-none flex-column align-items-end detail school left">
                                 <span class="ed-title">
                                     Completed a Laravel Web Development <br>Scholarship at Abstract of New Technology 
                                 </span>
@@ -225,18 +294,37 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 detail right">
-                                <div class="circle-line"></div>
+                            <div class="col-lg-6 col-12 detail right">
+                                <div class="circle-line d-lg-none d-block ms-3"></div>
+                                <div class="circle-line d-lg-flex d-none"></div>
                                 <span class="ed-year">7 Apr, 2025</span>
+                                <div class="d-lg-none d-flex flex-column align-items-start bottom-90">
+                                    <span class="ed-title">
+                                        Completed a Laravel Web Development <br>Scholarship at Abstract of New Technology 
+                                    </span>
+                                    <small class="s_e_year">From 2024 to 2025, Abstract of New Technology</small>
+                                    <div class="logo-wrapper d-flex flex-column align-items-start my-2">                                    
+                                        <div class="d-flex flex-column align-items-start">
+                                            <img src="@/assets/img/dcc.png" alt="" class="school-logo" style="height: 65px;">                                                                
+                                            <img src="@/assets/img/sa.png" alt="" class="school-logo object-fit-contain my-2" style="height: 50px;">                                                                
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                            <img src="@/assets/img/ANT.png" alt="" style="height: 40px!important;" class="school-logo">
+                                            <small class="ant-name">Abstract of New Technology</small>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- ============================================== -->
                             <div class="col-12 position-absolute bottom-0 lastDetail">
                                 <div class="row">
-                                    <div class="col-6 detail left">
+                                    <div class="col-lg-6 d-lg-block d-none detail left">
                                         <span class="ed-year">Currently</span>
                                     </div>
-                                    <div class="col-6 d-flex flex-column align-items-end detail school right position-relative pb-0">
-                                        <div class="circle-line"></div>
+                                    <div class="col-lg-6 col-12 d-flex flex-column align-items-end detail school right position-relative pb-0">
+                                        <div class="circle-line d-lg-none d-block ms-3"></div>
+                                        <div class="circle-line d-lg-flex d-none"></div>
+                                        <span class="ed-year d-lg-none d-block ">Currently</span>
                                         <span class="ed-title">
                                             Studying Software Development at <br>Norton University
                                         </span>
@@ -263,73 +351,73 @@
                     </div>
                     <div class="col-12">
                         <div class="row position-relative g-2 align-items-center justify-content-center">
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-figma"></i>
                                     <span class="skillName">Figma</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-html5"></i>
                                     <span class="skillName">HTML</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-css3-alt"></i>
                                     <span class="skillName">CSS3</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-bootstrap"></i>
                                     <span class="skillName">BootStrap</span>
                                 </div>
                             </div>
-                            <div class="col-2" style="--cskill: #d0aa13b3">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6" style="--cskill: #d0aa13b3">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-js"></i>
                                     <span class="skillName">JavaScript</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-php"></i>
                                     <span class="skillName">PHP</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-light fa-database"></i>
                                     <span class="skillName">MySQL</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-vuejs"></i>
                                     <span class="skillName">VueJS</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-laravel"></i>
                                     <span class="skillName">Laravel</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <img src="@/assets/img/c-plus-plus-logo.png" height="55" width="55" class="img-contain" alt="">
                                     <span class="skillName">C++</span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <i class="fa-brands fa-flutter"></i>
                                     <span class="skillName">Flutter <i class="notice">(Basic + Fetch API)</i></span>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                                 <div class="skill-wrapper">
                                     <img src="@/assets/img/blender-3d.png" height="55" width="55" class="img-contain" alt="">
                                     <span class="skillName">Blender <i class="notice">(Learning)</i></span>
@@ -351,19 +439,19 @@
                         </small>
                         <h2 class="bold text-center mb-4">My Future Plans</h2>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                         <div class="skill-wrapper">
                             <img src="@/assets/img/spring-boot.png" height="55" width="55" class="img-contain" alt="">
                             <span class="skillName">Spring Boot</span>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                         <div class="skill-wrapper">
                             <i class="fa-brands fa-linux"></i>
                             <span class="skillName">Linux</span>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                         <div class="skill-wrapper">
                             <i class="fa-light fa-shield-check"></i>
                             <span class="skillName">Cyber Security</span>
@@ -381,7 +469,7 @@
                         </small>
                         <h2 class="bold text-center mb-4">Project Overview</h2>
                     </div>
-                    <div class="col-4">
+                    <div class="col-xl-4 col-lg-6 col-12 mb-lg-0 mb-5">
                         <a href="https://unique-frangipane-2d03a1.netlify.app/" class="project-wrapper">
                             <div class="thumbnail">
                                 <img src="@/assets/img/angkortrek(2).png" alt="">
@@ -396,7 +484,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-xl-4 col-lg-6 col-12">
                         <a href="https://illustrious-horse-98dd8c.netlify.app/" class="project-wrapper">
                             <div class="thumbnail">
                                 <img src="@/assets/img/green_folio.png" alt="">
